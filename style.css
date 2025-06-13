@@ -5,6 +5,10 @@
 
 }
 
+.hide {
+    display: none;
+}
+
 body{
     background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
     display: flex;

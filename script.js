@@ -22,6 +22,8 @@ const getWeatherData = async(city) => {
     return data
 }
 
+const weatherContainer = document.querySelector("#weather-data")
+
 const showWeatherData = async (city) => {
     const data = await getWeatherData(city)
 
@@ -31,6 +33,7 @@ const showWeatherData = async (city) => {
     humidityElement.innerText = `${data.main.humidity}%`
     windElement.innerText = `${data.wind.speed}km/h`
 
+    weatherContainer.classList.remove("hide")
 }
 
 //eventos
